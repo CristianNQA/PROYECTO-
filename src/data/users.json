@@ -1,0 +1,35 @@
+{
+  "id_counter": 11,
+  "users": [
+    {
+      "id": 5,
+      "name": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 8,
+      "name": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 9,
+      "name": "Jorge",
+      "email": "jorge@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 10,
+      "name": "Jorge",
+      "email": "jorge@example.com",
+      "password": "jorgito123"
+    },
+    {
+      "id": 11,
+      "name": "Jorge",
+      "email": "jorge@example.com",
+      "password": "jorgito123"
+    }
+  ]
+}
