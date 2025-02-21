@@ -11,7 +11,7 @@ const PORT = ENVIRONMENT.PORT
 
 //cross origin resource sharing. En los middlewares es muy importante el orden 
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: ENVIRONMENT.URL_FRONTED
 })
 ) 
 app.use(express.json())//es un middleware a nivel de aplicacion
