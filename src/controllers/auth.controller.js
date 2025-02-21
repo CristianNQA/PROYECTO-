@@ -77,7 +77,7 @@ export const registerController = async (request, response) => {
             html: `
                 <h1>Debes validar tu mail</h1>
                 <p>Da click en el enlace de verificacion</p>
-                <a href='http://localhost:${ENVIRONMENT.PORT}/api/auth/verify-email?${QUERY.VERIFICATION_TOKEN}=${verificationToken}'>Verificar Email</a>
+                <a href='${ENVIRONMENT.URL_BACKEND}/api/auth/verify-email?${QUERY.VERIFICATION_TOKEN}=${verificationToken}'>Verificar Email</a>
             `,
         });
         const password_hash = await bcrypt.hash(password, 10)

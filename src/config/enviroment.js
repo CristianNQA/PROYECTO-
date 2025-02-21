@@ -9,7 +9,8 @@ const ENVIRONMENT = {
     SECRET_KEY_JWT: process.env.JWT_SECRET,
     EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
     EMAIL_USERNAME: process.env.EMAIL_USERNAME,
-    URL_FRONTED: 'http://localhost:5173',
+    URL_FRONTED: process.env.URL_FRONTEND, 
+    URL_BACKEND: process.env.URL_BACKEND,
     MYSQL: {
         PASSWORD: process.env.MYSQL_PASSWORD,
         HOST: process.env.MYSQL_HOST,
