@@ -16,7 +16,8 @@ const ENVIRONMENT = {
         HOST: process.env.MYSQL_HOST,
         DB_NAME: process.env.MYSQL_DB_NAME,
         USERNAME: process.env.MYSQL_USERNAME
-    }
+    },
+    API_KEY: process.env.API_KEY
 }
 
 export default ENVIRONMENT

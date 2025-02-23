@@ -3,6 +3,14 @@ import jwt from "jsonwebtoken";
 
 export const authMiddleware = (request, response, next) => {
     try {
+        const api_key = request.headers['x-api-key']
+        if(api_key !== ENVIRONMENT.API_KEY){
+           response.json({
+            ok: false,
+            status: 401,
+            message: 'Unauthorized'
+           })
+        }
         const access_token = request.headers.authorization.split(' ')[1];
         
         //aparte de verificar tambien transformamos el token en objeto nuevamente

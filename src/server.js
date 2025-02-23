@@ -22,11 +22,15 @@ app.use('/api/status', statusRoute)//delegamos el flujo de consultas a /api/stat
 
 import authRouter from './routes/auth.routes.js'
 import workspaceRouter from "./routes/workspace.route.js";
+import { authMiddleware } from "./middlewares/auth.middleware.js";
 app.use('/api/auth', authRouter);    
 
 app.use('/api/workspace', workspaceRouter) 
 
 app.use('/api/channel', channelRouter)
+
+//devuelve info del usuario
+app.get('/api/profile', authMiddleware ,async (req, res) => {})
 
 app.listen(PORT, () => {
     console.log(`el servidor se ejecuta en puerto: ${PORT}`)
